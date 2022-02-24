@@ -2,7 +2,7 @@
 pkgname=wgpeer
 pkgdesc='Dynamic endpoint manager for WireGuard'
 pkgver=0.0.2
-pkgrel=1
+pkgrel=2
 arch=('x86_64' 'aarch64')
 url="https://dev.eqrx.net/$pkgname"
 license=('AGPL3')
@@ -17,6 +17,6 @@ build() {
 
 package() {
   cd "$pkgname-$pkgver"
-  install -Dm755 init/$pkgname.service "$pkgdir"/usr/lib/systemd/system/$pkgname.service
+  install -Dm644 init/$pkgname.service "$pkgdir"/usr/lib/systemd/system/$pkgname.service
   install -Dm755 bin/$pkgname "$pkgdir"/usr/bin/$pkgname
 }
