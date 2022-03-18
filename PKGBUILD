@@ -1,14 +1,14 @@
 # Maintainer: Alexander Sowitzki <dev@eqrx.net>
 pkgname=wgpeer
 pkgdesc='Dynamic endpoint manager for WireGuard'
-pkgver=0.0.2
-pkgrel=2
+pkgver=0.0.4
+pkgrel=1
 arch=('x86_64' 'aarch64')
 url="https://eqrx.net/$pkgname"
 license=('AGPL3')
 makedepends=('go')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/eqrx/$pkgname/archive/refs/tags/v$pkgver.tar.gz")
-sha512sums=('ed8f30f7e7fb48e80a80a1af14a3c14861e9eccb27e0b7419267b77f508df33db5a4a218b40bf39fe19190e61535c801161c2036a205be2d719d613343f040df')
+sha512sums=('45e7df15dc1dffed086c0ead7b9db79fc2e364c708ba352b9510e1685e74e1554540a7f94b56e0c53e5844135c05bd9097ba5e725513b9d2e31f5e798e452370')
 
 build() {
   cd "$pkgname-$pkgver"
